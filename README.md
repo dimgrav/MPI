@@ -1,2 +1,2 @@
 # MPI
-Excercises in using MPI lib
+Exercises in using MPI lib
