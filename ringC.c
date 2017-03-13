@@ -34,7 +34,6 @@ int main(int argc, char *argv[])
 		{	
 			MPI_Send(&num, 1, MPI_INT, rank + 1, 0, MPI_COMM_WORLD);
 			printf("The number after node %d is: %d\n", rank, num);
-
 		}
 	}
 	MPI_Finalize();
