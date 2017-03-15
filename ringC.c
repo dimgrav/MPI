@@ -19,6 +19,9 @@ int main(int argc, char *argv[])
 		printf("Insert number to be sent from node %d: \n", rank);
 		scanf("%d", &num);
 		MPI_Send(&num, 1, MPI_INT, rank + 1, 0, MPI_COMM_WORLD);
+		// receives from the final node and displays result
+		MPI_Recv(&num, 1, MPI_INT, size - 1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		printf("The number after the final node %d is: %d\n", size - 1, num);
 	}
 	else
 	{
@@ -28,7 +31,6 @@ int main(int argc, char *argv[])
 		if (rank == size - 1)
 		{
 			MPI_Send(&num, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
-			printf("The number after the final node %d is: %d\n", rank, num);
 		}
 		else
 		{	
