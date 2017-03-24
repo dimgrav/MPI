@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 	if (me == 0)
 	{
 		tt = MPI_Wtime();
-		printf("\nTotal = %d prime numbers in [1, %d]\n", count - 2, N);
+		printf("\nTotal = %d prime numbers in [1, %d]\n", count - 2, N); // remove 0 and 1 from total count
 		printf("\nTotal run time: %6fs\n", tt - ta);
 	}
 
