@@ -1,4 +1,4 @@
-// Prime number counter
+// Perfect number counter
 // Author: Mitsakos, 2017
 
 #include <stdio.h>
