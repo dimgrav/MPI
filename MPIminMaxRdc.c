@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		{
 			localMax = i;
 		}
-		else if (A[i] < A[localMin])
+		if (A[i] < A[localMin])
 		{
 			localMin = i;
 		}
