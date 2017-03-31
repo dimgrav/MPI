@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = me; i < N; i += P)
 		{
-			MPI_Send(&C[i][0], M, MPI_INT, 0, i, MPI_COMM_WORLD);
+			MPI_Send(&C[i][0], M, MPI_INT, 0, 0, MPI_COMM_WORLD);
 		}
 	}
 
@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
 		{
 			for (i = j; i < N; i += P)
 			{
-				MPI_Recv(&C[i][0], M, MPI_INT, j, i, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+				MPI_Recv(&C[i][0], M, MPI_INT, j, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 			}
 		}
 		tt = MPI_Wtime(); // timer stop
