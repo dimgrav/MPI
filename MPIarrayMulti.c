@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[])
 {
-	int **A, **B, **C; // array A, array B, P: Product array
+	int **A, **B, **C; // array A, array B, C: Product array
 	int i, j, k; // iterators
 	int N, L, M; // array dimensions
 	int s; // holds C values
