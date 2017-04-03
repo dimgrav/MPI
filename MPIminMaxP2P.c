@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 		printf("\n");
 		for(i = 0; i < N; i++)
 		{
-			printf("|%d| ", A[i]);
+			printf("| %d\t", A[i]);
 		}
 		printf("\n");
 		
