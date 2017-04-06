@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int localPos; // max position (part)
 	int *globalPos; // max position (N)
 	int maxPos; // max value position in MAX
-	int i, j; // iterators
+	int i; // iterator
 
 	int id, P; // MPI rank, size
 	double ta, tt; // MPI timer start, stop
