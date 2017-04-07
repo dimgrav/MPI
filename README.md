@@ -8,3 +8,5 @@ MPI primarily addresses the message-passing parallel programming model: data is 
 source: https://computing.llnl.gov/tutorials/mpi/#What
 
 Used in Distributed and Parallel Systems.
+
+The objective of this repository is to demonstrate the difference in calculation time between serial and parallel algorithms, measure performance and scalability and find the turning point, after which the communication cost between nodes exceeds the computational benefit.
