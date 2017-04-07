@@ -59,6 +59,7 @@ int main(int argc, char **argv)
 	if (id == 0)
 	{
 		tt = MPI_Wtime();
+		/* --- remove this line to display the array
 		printf("\nArray:\n");
 		printf("\n");
 		for (i = 0; i < N; i++)
@@ -67,6 +68,7 @@ int main(int argc, char **argv)
 			
 		}
 		printf("\n");
+		remove this line to display the array --- */
 		printf("\nArray product = %d\n", allprod[0]);
 		printf("\nTime = %.6f\n", tt - ta);
 	}
