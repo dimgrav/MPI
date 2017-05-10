@@ -1,5 +1,5 @@
-// MPI Array MinMax Broadcast
-// Author: Mitsakos, 2017
+// MPI Array MinMax collective communication
+// Author: Dimitris Gravanis, 2017
 
 #include <stdio.h>
 #include <stdlib.h>
