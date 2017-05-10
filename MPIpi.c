@@ -1,5 +1,5 @@
 // Pi calculation on multiple nodes
-// Author: Mitsakos, 2017
+// Author: Dimitris Gravanis, 2017
 
 #include <stdio.h>
 #include <math.h>
