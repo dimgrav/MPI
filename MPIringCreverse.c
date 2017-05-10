@@ -1,6 +1,6 @@
 // MPI Ring implementation
 // "There and back again"
-// Author: Mitsakos, 2017
+// Author: Dimitris Gravanis, 2017
 
 #include "mpi.h"
 #include <stdio.h>
