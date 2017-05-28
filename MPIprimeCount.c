@@ -7,11 +7,11 @@
 
 int main(int argc, char *argv[])
 {
-	int N; // prime numbers limit
+	int N; 		// prime numbers limit
 	int countP = 0; // counter of primes per node
-	int count; // total prime count
-	int i, n; // iterators
-	int prime; // 1: number is prime, 0: number is not prime
+	int count; 	// total prime count
+	int i, n; 	// iterators
+	int prime; 	// 1: number is prime, 0: number is not prime
 
 	// MPI initialization
 	MPI_Init(&argc, &argv);
