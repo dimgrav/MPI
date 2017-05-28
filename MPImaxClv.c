@@ -7,15 +7,15 @@
 
 int main(int argc, char *argv[])
 {
-	int *A, *B, *MAX; // global array, local array, max positions array
-	int N, part; // size of A, B
-	int localPos; // max position (part)
-	int *globalPos; // max position (N)
-	int maxPos; // max value position in MAX
-	int i; // iterator
+	int *A, *B, *MAX; 	// global array, local array, max positions array
+	int N, part; 		// size of A, B
+	int localPos; 		// max position (part)
+	int *globalPos; 	// max position (N)
+	int maxPos; 		// max value position in MAX
+	int i; 			// iterator
 
-	int id, P; // MPI rank, size
-	double ta, tt; // MPI timer start, stop
+	int id, P; 		// MPI rank, size
+	double start, stop; 	// MPI timer start, stop
 
 	// Initiate MPI
 	MPI_Init(&argc, &argv);
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 	// timer start
 	if (id == 0)
 	{
-		ta = MPI_Wtime();
+		start = MPI_Wtime();
 	}
 
 	localPos = 0;
@@ -73,8 +73,9 @@ int main(int argc, char *argv[])
 				maxPos = MAX[i];
 			}
 		}
-
-		tt = MPI_Wtime();
+		
+		// timer stop
+		stop = MPI_Wtime();
 		// display array
 		printf("\nArray A: \n");
 		printf("\n");
