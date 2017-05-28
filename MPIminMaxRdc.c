@@ -7,14 +7,14 @@
 
 int main(int argc, char *argv[])
 {
-	int *A; // Array
-	int N; // Array size
+	int *A;			// Array
+	int N;			// Array size
 	int localMin, localMax; // min, max per node
-	int i; // iterator
-	int Min, Max; // min, max values in array
+	int i;			// iterator
+	int Min, Max;		// min, max values in array
 
-	int nodeID, nodeSUM; // MPI rank, size
-	double ta, tt; // MPI timer start, stop
+	int nodeID, nodeSUM;	// MPI rank, size
+	double ta, tt;		// MPI timer start, stop
 
 	// Initialize MPI
 	MPI_Init(&argc, &argv);
