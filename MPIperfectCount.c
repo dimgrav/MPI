@@ -7,11 +7,11 @@
 
 int main(int argc, char *argv[])
 {
-	int N; // perfect numbers limit
+	int N; 		// perfect numbers limit
 	int countP = 0; // counter of perfect numbers per node
-	int count; // total count
-	int i, n; // iterators
-	int sum; // sum of n-1 numbers
+	int count; 	// total count
+	int i, n; 	// iterators
+	int sum; 	// sum of n-1 numbers
 
 	// MPI initialization
 	MPI_Init(&argc, &argv);
